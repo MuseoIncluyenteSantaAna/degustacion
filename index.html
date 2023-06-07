@@ -5,14 +5,24 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Estilos adicionales para la página */
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    
     .section {
       text-align: center;
       padding: 20px;
+      border: 2px solid #BAE376;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
     
     .section-title {
       font-size: 24px;
       margin-bottom: 10px;
+      color: #BAE376;
     }
     
     .section-description {
@@ -24,6 +34,7 @@
       height: 200px;
       object-fit: cover;
       margin-bottom: 10px;
+      border-radius: 5px;
     }
     
     .section-price {
@@ -34,11 +45,16 @@
     
     .section-button {
       display: inline-block;
-      background-color: #337ab7;
-      color: white;
+      background-color: #BAE376;
+      color: black;
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .section-button:hover {
+      background-color: #9FC658;
     }
   </style>
 </head>
@@ -47,11 +63,8 @@
   <div class="section">
     <h2 class="section-title">Espadín</h2>
     <img src="espadin.jpg" alt="Espadín" class="section-image">
-    <p class="section-description">Descripción del mezcal Espadín</p>
+    <p class="section-description">El mezcal Espadín es elaborado a partir del agave Espadín, una variedad de agave comúnmente utilizada en la producción de mezcal. Este mezcal tiene un sabor suave y balanceado, con notas ahumadas y herbales.</p>
     <p class="section-price">$XX.XX</p>
-    <audio controls>
-      <source src="espadin.mp3" type="audio/mpeg">
-    </audio>
     <a href="#" class="section-button">Pedir</a>
   </div>
 
@@ -59,11 +72,8 @@
   <div class="section">
     <h2 class="section-title">Tobala</h2>
     <img src="tobala.jpg" alt="Tobala" class="section-image">
-    <p class="section-description">Descripción del mezcal Tobala</p>
+    <p class="section-description">El mezcal Tobala se elabora a partir del agave Tobalá, una variedad silvestre y rara de agave que crece en condiciones difíciles. Este mezcal es apreciado por su complejidad de sabores, con notas frutales y terrosas.</p>
     <p class="section-price">$XX.XX</p>
-    <audio controls>
-      <source src="tobala.mp3" type="audio/mpeg">
-    </audio>
     <a href="#" class="section-button">Pedir</a>
   </div>
 
@@ -71,11 +81,8 @@
   <div class="section">
     <h2 class="section-title">Tepextate</h2>
     <img src="tepextate.jpg" alt="Tepextate" class="section-image">
-    <p class="section-description">Descripción del mezcal Tepextate</p>
+    <p class="section-description">El mezcal Tepextate se elabora a partir del agave Tepextate, una especie de agave silvestre que requiere muchos años para madurar. Este mezcal se caracteriza por su sabor complejo y floral, con notas de cítricos y hierbas.</p>
     <p class="section-price">$XX.XX</p>
-    <audio controls>
-      <source src="tepextate.mp3" type="audio/mpeg">
-    </audio>
     <a href="#" class="section-button">Pedir</a>
   </div>
 
@@ -83,11 +90,8 @@
   <div class="section">
     <h2 class="section-title">Cuix</h2>
     <img src="cuix.jpg" alt="Cuix" class="section-image">
-    <p class="section-description">Descripción del mezcal Cuix</p>
+    <p class="section-description">El mezcal Cuix se elabora a partir del agave Cuixe, una variedad de agave que crece en regiones montañosas. Este mezcal tiene un sabor intenso y picante, con notas de pimienta y frutas maduras.</p>
     <p class="section-price">$XX.XX</p>
-    <audio controls>
-      <source src="cuix.mp3" type="audio/mpeg">
-    </audio>
     <a href="#" class="section-button">Pedir</a>
   </div>
 
@@ -95,11 +99,8 @@
   <div class="section">
     <h2 class="section-title">Ensambles</h2>
     <img src="ensambles.jpg" alt="Ensambles" class="section-image">
-    <p class="section-description">Descripción del mezcal Ensambles</p>
+    <p class="section-description">El mezcal Ensambles se elabora a partir de una combinación de diferentes variedades de agave. Esta mezcla crea un perfil de sabor único, con matices de distintos agaves que se complementan entre sí.</p>
     <p class="section-price">$XX.XX</p>
-    <audio controls>
-      <source src="ensambles.mp3" type="audio/mpeg">
-    </audio>
     <a href="#" class="section-button">Pedir</a>
   </div>
 
@@ -108,9 +109,5 @@
     <a href="https://mezcalorganico.netlify.app" class="section-button">Home</a>
   </div>
 
-  <!-- Botón de Contacto -->
-  <div class="section">
-    <a href="https://wa.me/tunumerodewhatsapp" class="section-button">Contáctanos</a>
-  </div>
 </body>
 </html>
